@@ -1,0 +1,21 @@
+<definition>
+ <opcode>CTX</opcode>
+ 
+ <text id = "text">
+  <name>Text</name>
+  <description>The displayed text.</description>
+ </text>
+ <output id="target_label">
+  <name>Target Label</name>
+  <description>The target label that the cutscene will jump to when this choice is selected by the player.</description>
+ </output>
+ 
+ <implementation>
+  <execute>DialogManager.AddChoice(%text%, %target_label%);</execute>
+ </implementation>
+
+ <name>Dialog Choice</name>
+ <description>Adds a dialog choice to the next line of dialog.</description>
+ <icon>iconCTX.bmp</icon>
+ <category>Dialog</category>
+</definition>

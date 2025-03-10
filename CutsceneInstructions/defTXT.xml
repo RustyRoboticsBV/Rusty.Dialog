@@ -1,0 +1,42 @@
+<definition>
+ <opcode>TXT</opcode>
+ 
+ <text id = "speaker">
+  <name>Speaker</name>
+  <description>The name of the person that speaks this line.</description>
+ </text>
+ <text id = "mood">
+  <name>Mood</name>
+  <description>The mood or tone of voice with which this line is spoken.</description>
+  <default>Neutral</default>
+ </text>
+ <multiline id = "body">
+  <name>Body</name>
+  <description>The actual line of dialog.</description>
+  <default>Blah, blah, blah...</default>
+ </multiline>
+ 
+ <implementation>
+  <execute>DialogManager.SetText(%speaker%, %mood%, %body%);</execute>
+ </implementation>
+
+ <name>Set Text</name>
+ <description>Push a line of dialog to the dialog system.</description>
+ <icon>iconTXT.bmp</icon>
+ <category>Dialog</category>
+ 
+ <editor_node>
+  <main_color>#2b97e0</main_color>
+ </editor_node>
+ 
+ <pre>
+  <list id="choices">
+   <name>Dialog Choices</name>
+   <button_text>Add Choice</button_text>
+   <instruction id="choice">
+    <opcode>CTX</opcode>
+    <name>Choice</name>
+   </instruction>
+  </list>
+ </pre>
+</definition>

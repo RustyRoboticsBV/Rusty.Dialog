@@ -1,0 +1,17 @@
+<definition>
+ <opcode>SEL</opcode>
+ 
+ <text id = "window">
+  <name>Window</name>
+  <description>The id of the dialog window that we want to select.</description>
+ </text>
+ 
+ <implementation>
+  <execute>DialogManager.Select(%window%);</execute>
+ </implementation>
+
+ <name>Select Dialog</name>
+ <description>Selects a dialog window as the target for future dialog-related instructions.</description>
+ <icon>iconSEL.bmp</icon>
+ <category>Dialog</category>
+</definition>
